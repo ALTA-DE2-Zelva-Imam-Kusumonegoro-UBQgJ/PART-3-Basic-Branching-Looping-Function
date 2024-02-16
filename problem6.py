@@ -10,11 +10,11 @@ def prime_number(number):
             return False
     return True
 
-# Fungsi untuk memeriksa apakah suatu bilangan adalah Full Prima
+  # Memeriksa full prima atau tidak
 def full_prime(number):
     num_digits = len(str(number))
     
-    # Periksa setiap digit untuk memastikan bahwa semuanya adalah bilangan prima
+  
     for _ in range(num_digits):
         digit = number % 10
         if not prime_number(digit):
